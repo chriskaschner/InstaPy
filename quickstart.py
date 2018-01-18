@@ -1,7 +1,8 @@
 from instapy import InstaPy
+import os
 
-insta_username = ''
-insta_password = ''
+insta_username = os.environ['INSTA_USERNAME']
+insta_password = os.environ['INSTA_PASSWORD']
 
 # set headless_browser=True if you want to run InstaPy on a server
 try:
